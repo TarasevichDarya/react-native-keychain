@@ -27,12 +27,12 @@ public class DeviceAvailability {
   }
 
   public static boolean isFaceAuthAvailable(@NonNull final Context context) {
-    return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_FACE);
+    return false;
   }
 
-    public static boolean isIrisAuthAvailable(@NonNull final Context context) {
-        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_IRIS);
-    }
+  public static boolean isIrisAuthAvailable(@NonNull final Context context) {
+    return false;
+  }
 
   /** Check is permissions granted for biometric things. */
   public static boolean isPermissionsGranted(@NonNull final Context context) {
